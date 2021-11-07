@@ -23,8 +23,19 @@ html{
     width: 100vw;
 }
 
-#logo{
-   
+@keyframes pulse {
+  from {
+    width: 50px;
+  }
+
+  to {
+    width: 60px;
+  }
+}
+
+#logo:hover{
+    animation: pulse 500ms;
+    animation-iteration-count: infinite;
 }
 
 .menu{
@@ -35,11 +46,13 @@ html{
     padding: 1em;
     font-family: Fruktur;
     font-size: 20px;
+    transition: all 500ms;
 }
 
 .menu:hover{
     color: #0A0A0A;
     background-color: #DEE5E5;
+    transform: translateY(10px);
 }
 
 .userIcon{
@@ -144,6 +157,11 @@ html{
     border: 1px solid #ad7d37;
     border-radius: 15px;
     font-size: 15px;
+    transition: all 500ms;
+}
+
+#submit:hover{
+    transform: scale(1.2);
 }
 
 /* social media */
